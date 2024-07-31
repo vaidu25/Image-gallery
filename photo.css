@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .body{
+    background-color: #adadc9;
+  }
+  .container {
+    width: 100%;
+    text-align: center;
+    background-color: #696880;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 35px;
+    font-weight: normal;
+    position: relative;
+    margin: 40px 0;
+    color:white;
+  }
+  
+  h1::before {
+    content: " ";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: white;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      width: 100px;
+    }
+    50% {
+      width: 200px;
+    }
+    100% {
+      width: 100px;
+    }
+  }
+  
+  .top-content {
+    background-color: #3e3d53;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #696880;
+  }
+  
+  h3 {
+    height: 100%;
+    background-color: #7f7d9c;
+    line-height: 60px;
+    padding: 0 50px;
+    color:white;
+  }
+  
+  label {
+    display: inline;
+    height: 100%;
+    padding: 0 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.5s;
+    overflow: hidden;
+    justify-content:space-around;
+  }
+  
+  label:hover {
+    color: #5a3e33;
+    transition: 0.5s;
+  }
+  /*
+  .photo-gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }*/
+  .photo-gallery {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#c5c6d0;
+    
+
+}
+  /*
+  .pic {
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 9px 8px 9px 4px lightgray;
+    transition: 0.5s;
+    
+  }
+  
+  .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+   
+  }*/
+
+  /*ghhhh*/
+
+
+  .pic {
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.5s ease-in-out;
+    margin: 10px;
+    overflow: hidden;
+    width: 260px;
+  }
+  
+  .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .pic:hover {
+    transform: scale(1.1);
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
